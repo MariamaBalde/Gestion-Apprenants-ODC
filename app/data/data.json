@@ -1,0 +1,96 @@
+{
+    "Admin": [
+        {
+            "id": 1,
+            "login": "admin@sonatel.sn",
+            "password": "balde123"
+        }
+    ],
+    "Vigile": [
+        {
+            "id": 2,
+            "login": "vigile@sonatel.sn",
+            "password": "vigile123"
+        }
+    ],
+    "Apprenant": [
+        {
+            "id": 3,
+            "login": "apprenant@sonatel.sn",
+            "password": "apprenant123"
+        }
+    ],
+    "Promotions": [
+        {
+            "name": "Promotion 2028",
+            "start_date": "2025-01-01",
+            "end_date": "2025-04-27",
+            "referentiels": [
+                "3"
+            ],
+            "image": "680e7c148d78b_Capture d\u2019\u00e9cran du 2025-04-22 04-07-30.png",
+            "status": "inactive"
+        },
+        {
+            "name": "Promotion 2000",
+            "start_date": "2000-01-01",
+            "end_date": "2000-11-11",
+            "referentiels": [
+                "1"
+            ],
+            "image": "68108c770b977_WhatsApp Image 2025-04-22 at 03.46.42 (1).jpeg",
+            "status": "inactive"
+        },
+        {
+            "name": "Promotion 2001",
+            "start_date": "2001-02-02",
+            "end_date": "2001-12-30",
+            "referentiels": [
+                "4"
+            ],
+            "image": "6810f60d9d279_corner.jpeg",
+            "status": "inactive"
+        },
+        {
+            "name": "Promotion 2005",
+            "start_date": "2001-01-01",
+            "end_date": "2001-11-11",
+            "referentiels": [
+                "3"
+            ],
+            "image": "6810f9f90423a_Dice.jpeg",
+            "status": "inactive"
+        },
+        {
+            "name": "Promotion 2025",
+            "start_date": "2025-02-06",
+            "end_date": "2025-11-06",
+            "referentiels": [
+                "1",
+                "5"
+            ],
+            "image": "68122b936fda0_ludofleche.jpeg",
+            "status": "active"
+        },
+        {
+            "name": "Promotion 2021",
+            "start_date": "2005-01-30",
+            "end_date": "2004-06-08",
+            "referentiels": [
+                "1"
+            ],
+            "image": "68123b611f581_ludo.jpeg",
+            "status": "inactive"
+        },
+        {
+            "name": "Promotion 2024",
+            "start_date": "2024-03-07",
+            "end_date": "2025-12-12",
+            "referentiels": [
+                "4"
+            ],
+            "image": "681243cb0e6c9_front.jpeg",
+            "status": "inactive"
+        }
+    ]
+}

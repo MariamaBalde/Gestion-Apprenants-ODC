@@ -1,0 +1,246 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .login-card {
+    background: #fff;
+    padding:0 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   
+     width: 500px;
+     height: 650px;
+    text-align: center;
+    position: relative;
+    border-right: 8px solid #f97316;
+    border-bottom: 8px solid #059669; 
+  }
+  
+  .logo {
+    width: 150px;
+   
+  }
+  
+  h3 {
+    color: #333;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  
+  .highlight {
+    color: #f97316;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  input {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+  }
+  
+  .forgot {
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+  
+  .forgot a {
+    color: #f97316;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background: linear-gradient(to right, #f97316, #fca311);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+
+  .error-list {
+    list-style: none;
+    background-color: #ffe6e6;
+    color: #d8000c;
+    border: 1px solid #f5c2c2;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+ 
+  @media (max-width: 480px) {
+
+    body {    
+        width: 100%;
+        margin: auto;
+      }
+    .login-card {
+      border-right: 6px solid #f97316;
+      border-bottom: 6px solid #059669;
+      width: 350px;
+      height: 610px;
+    }
+  
+    h1 {
+      font-size: 1.3rem;
+    }
+  
+    .highlight {
+      font-size: 1rem;
+    }
+  
+    input, button {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+
+   /* Reset & base styles */
+
+/*    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #F5F6FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+.login-container label {
+  display: block;
+  text-align: left;
+  margin: 12px 0 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #FF7900;
+  background: #fff;
+}
+
+.login-container button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF7900;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #e66900;
+}
+
+.login-container p {
+  margin-top: 15px;
+}
+
+.login-container a {
+  color: #FF7900;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+.error-list {
+  list-style: none;
+  background-color: #ffe6e6;
+  color: #d8000c;
+  border: 1px solid #f5c2c2;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+} */
