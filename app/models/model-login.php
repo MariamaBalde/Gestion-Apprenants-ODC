@@ -1,5 +1,8 @@
 <?php
 namespace App\Models;
+use App\Enums\RoleEnum;
+require_once __DIR__ . '/../enums/enums.php';
+
 
 use function App\Models\jsonToArray;
 use function App\Models\arrayToJson;
@@ -8,13 +11,21 @@ return [
     "findUserByLoginAndPassword" => function (string $login, string $password): ?array {
         $data = jsonToArray();
 
-        foreach (["Admin", "Vigile", "Apprenant"] as $role) {
+
+  foreach ([RoleEnum::ADMIN->value, RoleEnum::VIGILE->value, RoleEnum::APPRENANT->value] as $role) {
             foreach ($data[$role] ?? [] as $user) {
                 if ($user["login"] === $login && $user["password"] === $password) {
                     return ["role" => ucfirst($role), ...$user];
                 }
             }
         }
+        // foreach (["Admin", "Vigile", "Apprenant"] as $role) {
+        //     foreach ($data[$role] ?? [] as $user) {
+        //         if ($user["login"] === $login && $user["password"] === $password) {
+        //             return ["role" => ucfirst($role), ...$user];
+        //         }
+        //     }
+        // }
 
         return null;
     },

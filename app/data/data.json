@@ -67,7 +67,8 @@
             "end_date": "2025-11-06",
             "referentiels": [
                 "1",
-                "5"
+                "5",
+                "2"
             ],
             "image": "68122b936fda0_ludofleche.jpeg",
             "status": "active"
@@ -90,6 +91,26 @@
                 "4"
             ],
             "image": "681243cb0e6c9_front.jpeg",
+            "status": "inactive"
+        },
+        {
+            "name": "Promotion 2030",
+            "start_date": "2030-01-01",
+            "end_date": "2030-11-11",
+            "referentiels": [
+                "3"
+            ],
+            "image": "\/assets\/images\/promotions\/\/6818eb781356b_ludo.jpeg",
+            "status": "inactive"
+        },
+        {
+            "name": "Promotion 20031",
+            "start_date": "2030-01-01",
+            "end_date": "2030-11-11",
+            "referentiels": [
+                "4"
+            ],
+            "image": "\/assets\/images\/promotions\/\/6818ebd7f0013_WhatsApp Image 2025-04-22 at 03.46.42.jpeg",
             "status": "inactive"
         }
     ]
