@@ -16,10 +16,6 @@
                    <i class="list-icon"><i class="fa-solid fa-book"></i></i>  
                     Tous les référentiels
              </button>
-            <!-- <button class="btn btn-secondary">
-                <i class="list-icon"><i class="fa-solid fa-book"></i></i>  
-                Tous les référentiels
-            </button> -->
             <button class="btn btn-primary" onclick="window.location.href='/referentiels/assign'">
                 <i class="plus-icon"><i class="fa-solid fa-plus"></i></i> Ajouter à la       promotion
             </button>

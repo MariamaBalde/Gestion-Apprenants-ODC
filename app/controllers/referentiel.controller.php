@@ -45,11 +45,30 @@ function showAllReferentiels()
 {
     $referentielModel = require __DIR__ . '/../models/referentiel.model.php';
     $referentiels = $referentielModel['getAllReferentiels']();
-    
 
-    renderView('referentiel/referentiel.list', [
-        'referentiels' => $referentiels
-    ]);
+        // Filtrer les référentiels par recherche
+    $search = $_GET['search'] ?? '';
+    if (!empty($search)) {
+            $referentiels = array_filter($referentiels, function ($referentiel) use ($search) {
+                return stripos($referentiel['nom'], $search) !== false;
+            });
+    }
+     // Pagination
+     $page = $_GET['page'] ?? 1;
+     $perPage = 6; 
+     $totalReferentiels = count($referentiels);
+     $totalPages = ceil($totalReferentiels / $perPage);
+     $referentiels = array_slice($referentiels, ($page - 1) * $perPage, $perPage);
+ 
+     renderView('referentiel/tout.referentiel', [
+         'referentiels' => $referentiels,
+         'page' => $page,
+         'totalPages' => $totalPages
+     ]);
+
+    // renderView('referentiel/referentiel.list', [
+    //     'referentiels' => $referentiels
+    // ]);
 }
 
 function storeAssignedReferentiels()
